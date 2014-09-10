@@ -1,0 +1,8 @@
+---
+# tasks file for time
+- name: set /etc/timezone 
+  template: src=etc/timezone dest=/etc/timezone
+  notify: update tzdata
+  sudo: yes
+  tags: timezone
+  

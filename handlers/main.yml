@@ -1,0 +1,7 @@
+---
+# handlers file for time
+- name: update tzdata
+  command: /usr/sbin/dpkg-reconfigure --frontend noninteractive tzdata
+  sudo: yes
+  tags: timezone
+  
